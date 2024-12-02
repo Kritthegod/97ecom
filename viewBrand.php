@@ -26,7 +26,7 @@ try {
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cfa6a3;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/logo.avif" style="height:60px; width: 60px;"></a>
+            <a class="navbar-brand" href="#"><img src="images/images.png" style="height:60px; width: 60px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -90,6 +90,8 @@ try {
                                         <td>$brand[brand_id]</td>
                                         <td>$brand[brand_name]</td>
                                         <td>$brand[country]</td>
+                                        <td> <a class='btn btn-primary' href=editBrand.php?bid=$brand[brand_id]>Edit</a> </td>
+                                         <td> <a class='btn btn-danger' href=editBrand.php?bid=$brand[brand_id]>Delete</a> </td>
                                 </tr>";
                             }
                         }
